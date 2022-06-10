@@ -1,0 +1,52 @@
+<div class="right-side-menu">
+  <div class="icon-wrapper">
+    <i
+      class="fa fa-home fa-2x home-icon"
+      (click)="onClose()"
+      routerLink="home"
+    ></i>
+    <button
+      tuiButton
+      appearance="icon"
+      (click)="onClose()"
+      size="m"
+      icon="tuiIconCloseLarge"
+      class="close-btn"
+    ></button>
+  </div>
+  <ul class="items-wrapper">
+    <li
+      class="tui-text_body-m item"
+      *ngFor="let item of items"
+      routerLinkActive="active"
+      [routerLink]="item.link"
+      (click)="onClick()"
+    >
+      {{ item.name }}
+    </li>
+  </ul>
+  <div class="tui-row tui-row_adaptive social-icon-wrapper">
+    <a
+      class="social-icon"
+      *ngFor="let icon of user.socialMedia"
+      tuiLink
+      [attr.href]="icon?.link"
+      target="_blank"
+    >
+      <i-bs
+        [name]="icon.iconName"
+        [width]="icon.iconSize"
+        [height]="icon.iconSize"
+      >
+      </i-bs>
+    </a>
+  </div>
+  <a
+    class="download-wrapper"
+    target="_blank"
+    [href]="'mailto:' + user.contact.email"
+  >
+    <p>Hire ME</p>
+    <i class="fa fa-envelope-open download-btn"></i>
+  </a>
+</div>

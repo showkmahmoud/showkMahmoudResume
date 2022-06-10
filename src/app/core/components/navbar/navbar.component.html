@@ -1,0 +1,59 @@
+<nav class="navbar mobile-navbar">
+  <ul>
+    <i
+      (click)="onClick('home')"
+      class="fa fa-home fa-3x home-icon mobile-home-page"
+      routerLink="home"
+    ></i>
+    <li class="navbar-toggle">
+      <button
+        tuiIconButton
+        type="button"
+        (click)="toggleMenu()"
+        icon="tuiIconAlignJustifyLarge"
+        appearance="icon"
+        size="m"
+      ></button>
+    </li>
+
+    <ul>
+      <i
+        (click)="onClick('home')"
+        class="fa fa-home fa-3x home-icon desktop-home-page"
+        routerLink="home"
+      ></i>
+      <li
+        class="navbar-item link"
+        *ngFor="let item of items"
+        [ngClass]="{
+          'navbar-hide': menuOpen
+        }"
+        (click)="onClick(item.link)"
+      >
+        <a
+          routerLinkActive="active"
+          class="link"
+          [routerLink]="item.link"
+          tuiLink
+        >
+          <span class="tui-text_body-m item-name">{{ item?.name }}</span>
+        </a>
+      </li>
+    </ul>
+    <li
+      class="navbar-item link"
+      [ngClass]="{
+        'navbar-hide': menuOpen
+      }"
+    >
+      <a
+        class="navbar-item link download-wrapper"
+        target="_blank"
+        [href]="'mailto:' + user.contact.email"
+      >
+        <p>Hire Me</p>
+        <i class="fa fa-envelope-open download-btn"></i>
+      </a>
+    </li>
+  </ul>
+</nav>

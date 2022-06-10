@@ -1,0 +1,147 @@
+a,
+a:hover {
+  color: var(--tui-text-01);
+}
+// Display Part of Top Menu CSS
+.navbar {
+  margin-top: -13px;
+  border-radius: 10px;
+  background-color: var(--tui-base-01);
+  -webkit-box-shadow: 0 0 5px 1px rgb(0 0 0 / 18%);
+
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 18%);
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  margin-right: 10px;
+}
+
+.item-name {
+  white-space: nowrap;
+}
+li:hover a {
+  color: var(--tui-primary);
+}
+.active {
+  color: var(--tui-primary);
+}
+.navbar-toggle {
+  display: none;
+}
+.home-icon {
+  color: var(--tui-base-01);
+  padding: 13px 15px;
+  margin-right: 10px;
+  background: var(--tui-primary);
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+.home-icon:hover {
+  background: var(--tui-primary-hover);
+}
+.mobile-home-page {
+  display: none;
+}
+@media (max-width: 75.9375em) {
+  .navbar {
+    margin: 0;
+    background: var(--tui-base-01);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
+    padding: 0;
+    z-index: 555;
+    border-radius: unset;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .navbar-toggle {
+    display: block;
+    margin-left: auto;
+    padding-right: 16px;
+  }
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    margin: 0;
+    border-top: 1px solid var(--tui-base-03);
+  }
+  .mobile-home-page {
+    display: block;
+  }
+  .desktop-home-page {
+    display: none;
+  }
+  .home-icon {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .navbar-hide {
+    display: none;
+  }
+  .link {
+    padding-right: 0px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+  :host ::ng-deep .btn-width {
+    width: 100%;
+  }
+  .download-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid var(--tui-base-03);
+  }
+}
+.download-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 50px;
+  padding: 5px 20px;
+  width: 65%;
+  margin-left: auto;
+  background: var(--tui-primary);
+  color: var(--tui-base-01);
+  cursor: pointer;
+  text-decoration: none;
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+li:hover .download-wrapper {
+  color: var(--tui-base-01) !important;
+}
+.download-btn {
+  margin-left: 20px;
+  color: var(--tui-text-01);
+  background: var(--tui-base-01);
+  margin-left: 15px;
+  border-radius: 50px;
+  font-size: 17px;
+  height: 30px;
+  width: 30px;
+  float: right;
+  text-align: center;
+  line-height: 29px;
+}

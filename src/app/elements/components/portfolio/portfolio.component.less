@@ -1,0 +1,109 @@
+.portfolio {
+  .row-wrapper {
+    justify-content: space-between;
+  }
+}
+.card-wrapper {
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  padding: 0;
+  max-height: 200px;
+  margin-bottom: 30px;
+}
+.card-wrapper:hover .overlay,
+.card-wrapper:hover .overlay::before {
+  visibility: visible;
+  padding: 15px;
+  width: 100%;
+  -webkit-transform: skewX(-40deg) scale(5);
+  transform: skewX(-40deg) scale(5);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: 0.6s all ease-in-out;
+  margin: auto;
+  right: 0;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: var(--tui-overlay);
+  color: var(--tui-base-01);
+  transition: 0.6s all ease-in-out;
+  -webkit-transform: skewX(-40deg);
+  transform: skewX(-40deg);
+  margin: auto;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 200px;
+  margin: auto;
+  display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-info {
+  color: #fff;
+  position: absolute;
+  left: 30%;
+  top: -20%;
+  opacity: 0;
+  transition: 0.6s all ease-in-out;
+  text-align: center;
+  width: 40%;
+}
+.card-wrapper:hover .card-info {
+  top: 27%;
+  opacity: 1;
+}
+.carousel-p {
+  margin: 0;
+}
+@import "~@taiga-ui/core/styles/taiga-ui-local";
+
+.carousel-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 -5rem;
+  :host-context(tui-root._mobile) & {
+    margin: 0;
+
+    button {
+      display: none;
+    }
+  }
+}
+
+.carousel-header {
+  .transition(background);
+  height: 25rem;
+  flex: 1;
+  background: var(--tui-base-01) center;
+  background-size: cover;
+}
+
+.left-arrow {
+  margin-top: -40%;
+}
+.right-arrow {
+  margin-top: -40%;
+}
+.pagination-items {
+  margin-top: 20px;
+}
+@media (max-width: 47.9375em) {
+  .carousel-wrapper {
+    margin: 0 !important;
+  }
+}

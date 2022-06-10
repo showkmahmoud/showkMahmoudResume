@@ -1,0 +1,16 @@
+<div class="resume tui-row tui-row_adaptive row-wrapper">
+  <p class="tui-text_h5 header tui-col_xs-12 tui-col_md-3 tui-col_lg-4">
+    {{ user.work.name }}
+  </p>
+  <ul class="list">
+    <li
+      class="p-content tui-text_body-m"
+      *ngFor="let item of user.work.content"
+    >
+      <p class="tui-text_body-m-bold">{{ item.position }}</p>
+      <p>{{ item.time }}</p>
+      <p>{{ item.location }}</p>
+      <p>{{ item.content }}</p>
+    </li>
+  </ul>
+</div>

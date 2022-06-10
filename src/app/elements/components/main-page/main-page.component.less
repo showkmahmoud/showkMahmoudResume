@@ -1,0 +1,255 @@
+.navigation-bar {
+  box-shadow: 0 0.125rem 1rem rgb(0 0 0 / 8%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  align-items: center;
+  padding: 0 1.25rem;
+  height: 3.5rem;
+  background: var(--tui-base-01);
+  border-bottom: 1px solid var(--tui-base-03);
+  z-index: 5;
+}
+.theme-settings {
+  position: fixed;
+  left: -150px;
+  top: 35%;
+  z-index: 99;
+  margin: 0;
+  transition: 0.4s all ease-in-out;
+  .color-settings {
+    background: var(--tui-base-01);
+    text-align: center;
+    padding: 10px 15px;
+    min-width: 120px;
+    min-height: 120px;
+    position: relative;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
+    .theme-option {
+      display: flex;
+      justify-content: center;
+      .theme-item {
+        width: 50%;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        position: relative;
+        cursor: pointer;
+      }
+      .theme-item::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 3px;
+        width: 98%;
+        -webkit-transition: 0.4s all ease-in-out;
+        transition: 0.4s all ease-in-out;
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+      .activeTheme::after {
+        background: var(--tui-primary);
+      }
+    }
+    .color-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .color-item {
+        width: 30%;
+        height: 30px;
+        margin: 2px;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        .check-icon {
+          position: absolute;
+          transition: 0.4s all ease-in-out;
+          top: 5px;
+          left: 10px;
+          font-size: 30px;
+          color: var(--tui-base-01);
+          opacity: 0;
+        }
+        .active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .btn-setting {
+    background: var(--tui-base-01);
+    position: absolute;
+    top: 0px;
+    right: -67px;
+    width: 67px;
+    height: 45px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
+  }
+}
+.open {
+  left: 0;
+}
+.main-navigation {
+  padding: 0;
+}
+.landing-layout-wrapper {
+  height: 100%;
+  margin: 0;
+  justify-content: space-between;
+}
+.landing-layout {
+  padding-right: 0;
+  padding-left: 0;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+.tui-col_3 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.mobile-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  z-index: 1111;
+}
+
+.home-icon {
+  color: var(--tui-base-06);
+  margin-right: 20px;
+}
+.toggle_btn {
+  display: none;
+}
+.elements {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 20px 20px 30px;
+  border-radius: 10px;
+  background-color: var(--tui-base-01);
+  -webkit-box-shadow: 0 0 5px 1px rgb(0 0 0 / 18%);
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 18%);
+  min-height: 400px;
+}
+:host ::ng-deep .elements {
+  .row-wrapper {
+    margin: 0;
+    align-items: flex-start;
+  }
+  .header {
+    color: var(--tui-text-01);
+    position: relative;
+    padding: 0;
+    margin-bottom: 40px;
+    white-space: nowrap;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 60px;
+    border-radius: 5px;
+    top: 37px;
+    display: block;
+    background: var(--tui-primary);
+  }
+  .p-content {
+    color: var(--tui-text-01);
+    line-height: 24px;
+    margin-top: 5px;
+    p {
+      color: var(--tui-text-01);
+    }
+  }
+  .list {
+    position: relative;
+    width: 66%;
+  }
+  .list::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    display: block;
+    background-color: var(--tui-base-05);
+    left: 5px;
+    top: 10px;
+    bottom: 5px;
+  }
+  li {
+    position: relative;
+    margin-top: 0px !important;
+    margin-bottom: 15px;
+    padding-left: 25px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 30px;
+    }
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 9px;
+    background-color: var(--tui-base-01);
+    border: 2px solid var(--tui-primary);
+    height: 9px;
+    width: 9px;
+    display: inline-block;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 74.9375em) {
+  .toggle_btn {
+    display: none;
+  }
+  .container {
+    margin-top: 43px;
+  }
+}
+@media (max-width: 47.9375em) {
+  .container {
+    margin-top: unset;
+    width: 100%;
+  }
+  .main-navigation {
+    display: block;
+  }
+  .toggle_btn {
+    display: inline-block;
+    margin-left: 9px;
+  }
+  .mobile-nav {
+    display: flex;
+    background: var(--tui-base-01);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
+  }
+  .navbar {
+    display: none;
+  }
+  :host ::ng-deep .elements {
+    .list {
+      width: 99%;
+    }
+  }
+  .about_none {
+    display: none;
+  }
+  .margin_top {
+    margin-top: 70px;
+  }
+}
