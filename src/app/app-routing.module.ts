@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'alaa-muhammed', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
-    path: 'alaa-muhammed',
+    path: 'home',
     loadChildren: () =>
       import('./elements/elements.module').then((m) => m.ElementsModule),
   },
