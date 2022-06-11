@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { user } from 'src/app/data/user';
+import { User } from 'src/app/data/userType';
 
 @Component({
   selector: 'app-testimonials',
@@ -7,7 +8,7 @@ import { user } from 'src/app/data/user';
   styleUrls: ['./testimonials.component.less'],
 })
 export class TestimonialsComponent implements OnInit {
-  user: any = user;
+  user: User = user;
   index = 0;
   constructor() {}
 

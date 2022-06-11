@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { user } from 'src/app/data/user';
+import { User } from 'src/app/data/userType';
 
 @Component({
   selector: 'app-side-menu',
@@ -7,7 +8,7 @@ import { user } from 'src/app/data/user';
   styleUrls: ['./side-menu.component.less'],
 })
 export class SideMenuComponent implements OnInit {
-  user: any = user;
+  user: User = user;
   @Output() buttonClicked: EventEmitter<boolean> = new EventEmitter();
 
   constructor() {}

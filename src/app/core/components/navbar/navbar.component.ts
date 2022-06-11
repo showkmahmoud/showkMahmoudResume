@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { navbarItems, user } from 'src/app/data/user';
+import { User } from 'src/app/data/userType';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { navbarItems, user } from 'src/app/data/user';
 })
 export class NavbarComponent implements OnInit {
   @Output() buttonClicked: EventEmitter<any> = new EventEmitter();
-  user: any = user;
+  user: User = user;
   items = navbarItems;
   menuOpen: boolean = true;
 

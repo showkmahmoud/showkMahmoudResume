@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { user } from 'src/app/data/user';
+import { User } from 'src/app/data/userType';
 
 @Component({
   selector: 'app-skills',
@@ -7,7 +8,7 @@ import { user } from 'src/app/data/user';
   styleUrls: ['./skills.component.less'],
 })
 export class SkillsComponent implements OnInit {
-  user: any = user;
+  user: User = user;
   constructor() {}
 
   ngOnInit(): void {}

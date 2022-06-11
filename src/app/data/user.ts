@@ -1,4 +1,7 @@
-export const user = {
+import { IconNamesEnum } from 'ngx-bootstrap-icons';
+import { User } from './userType';
+
+export const user: User = {
   img: '../assets/user.jpeg',
   name: 'Alaa Muhammed',
   birthday: '4th of November 1992',
@@ -19,24 +22,19 @@ export const user = {
   resume: '../assets/user1.jpeg',
   socialMedia: [
     {
-      iconName: 'facebook',
+      iconName: IconNamesEnum.Facebook,
       link: 'https://www.facebook.com/PeparsMohamed',
-      iconSize: 20,
+      iconSize: '20',
     },
-    // {
-    //   iconName: 'twitter',
-    //   link: '',
-    //   iconSize: 20,
-    // },
     {
-      iconName: 'linkedin',
+      iconName: IconNamesEnum.Linkedin,
       link: 'https://www.linkedin.com/in/alaa-mohamed-shehata-793065178',
-      iconSize: 20,
+      iconSize: '20',
     },
     {
-      iconName: 'instagram',
+      iconName: IconNamesEnum.Instagram,
       link: 'https://instagram.com/alaamuhammed92?igshid=YmMyMTA2M2Y=',
-      iconSize: 20,
+      iconSize: '20',
     },
   ],
   skills: {
