@@ -21,6 +21,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { TuiCarouselModule } from '@taiga-ui/kit';
 import { TuiDialogModule, TuiRootModule } from '@taiga-ui/core';
+import { TuiProgressModule } from '@taiga-ui/kit';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { TuiDialogModule, TuiRootModule } from '@taiga-ui/core';
     TuiDialogModule,
     TuiRootModule,
     TuiPaginationModule,
+    TuiProgressModule,
   ],
 })
 export class ElementsModule {}

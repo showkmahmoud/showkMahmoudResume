@@ -1,80 +1,72 @@
 import { IconNamesEnum } from 'ngx-bootstrap-icons';
 
-type socialItem = {
+type SocialItem = {
   iconName: IconNamesEnum | IconNamesEnum;
   link: string;
   iconSize: string;
 };
-type educationStep = {
+type EducationStep = {
   time: string;
   level: string;
   location: string;
   grade: string;
 };
-type experienceItem = {
+type ExperienceItem = {
   position: string;
   location: string;
   time: string;
   content: string;
 };
-type portfolioItemContent = {
+type PortfolioItemContent = {
   description: string;
   img: string;
 };
-type portfolioItem = {
+type PortfolioItem = {
   cover: string;
   name: string;
-  content: portfolioItemContent[];
+  content: PortfolioItemContent[];
 };
-
+type SkillItem = {
+  label: string;
+  percentage: number;
+  value: string;
+};
 export type User = {
   img: string;
   name: string;
   birthday: string;
   position: string;
   email: string;
-  military_service: string;
+  // military_service: string;
   about: {
     name: string;
     content: string;
     achievement: string[];
   };
   resume: string;
-  socialMedia: socialItem[];
+  socialMedia: SocialItem[];
   skills: {
     name: string;
-    content: string[];
+    content: SkillItem[];
   };
   education: {
     name: string;
-    content: educationStep[];
+    content: EducationStep[];
   };
   work: {
     name: string;
-    content: experienceItem[];
+    content: ExperienceItem[];
   };
   contact: {
     name: string;
     email: string;
     address: string;
-    mobileUae: string;
     mobileEgy: string;
-    mobileKsa: string;
     postion: string;
     linkedIn: string;
   };
-  testimonials: {
-    clients: {
-      name: string;
-      content: string[];
-    };
-    testimonialData: {
-      name: string;
-      content: string[];
-    };
-  };
   portfolio: {
     name: string;
-    items: portfolioItem[];
+    items: PortfolioItem[];
   };
 };

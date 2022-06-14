@@ -1,10 +1,22 @@
-<div class="skills tui-row tui-row_adaptive row-wrapper">
-  <p class="tui-text_h5 header tui-col_xs-12 tui-col_md-3 tui-col_lg-4">
+<div class="skills">
+  <p class="tui-text_h5 header">
     {{ user.skills.name }}
   </p>
-  <ul class="list skills-list">
-    <ng-container *ngFor="let item of user.skills.content">
-      <li class="p-content tui-text_body-m">{{ item }}</li>
-    </ng-container>
+  <ul class="skills-list tui-row tui-row_adaptive row-wrapper">
+    <div
+      *ngFor="let item of user.skills.content"
+      class="tui-col_xs-12 tui-col_md-6 tui-col_lg-6"
+    >
+      <div class="info-wrapper">
+        <p>{{ item.label }}</p>
+        <p>{{ item.percentage }} %</p>
+      </div>
+      <progress
+        tuiProgressBar
+        max="100"
+        class="progress"
+        [value]="item.value"
+      ></progress>
+    </div>
   </ul>
 </div>
