@@ -23,6 +23,7 @@ export class MainPageComponent implements OnInit {
   themes: string[] = ['light', 'dark'];
   selectedColor: any;
   selectedTheme: any = 'light';
+  sideMenuOpen: any;
   constructor(private route: Router) {}
 
   ngOnInit(): void {
@@ -73,5 +74,9 @@ export class MainPageComponent implements OnInit {
   }
   getUrl(item: any) {
     this.about = item;
+  }
+  openSideMenu(value: any) {
+    this.sideMenuOpen = value;
+    console.log(value);
   }
 }

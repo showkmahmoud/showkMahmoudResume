@@ -3,6 +3,23 @@
     justify-content: space-between;
   }
 }
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto;
+}
+.filter-item {
+  cursor: pointer;
+  color: var(--tui-text-02);
+  p {
+    white-space: nowrap;
+  }
+}
+.active_filter_item {
+  color: var(--tui-primary);
+}
 .card-wrapper {
   overflow: hidden;
   position: relative;
@@ -105,5 +122,12 @@ img {
 @media (max-width: 47.9375em) {
   .carousel-wrapper {
     margin: 0 !important;
+  }
+  .filter-section {
+    width: 100%;
+    text-align: center;
+  }
+  .filter-item {
+    width: 100%;
   }
 }

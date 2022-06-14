@@ -1,4 +1,5 @@
 import { IconNamesEnum } from 'ngx-bootstrap-icons';
+import { FILTER_ACTIONS } from '../elements/components/portfolio/portfolio.component';
 import { User } from './userType';
 
 export const user: User = {
@@ -140,75 +141,9 @@ export const user: User = {
             description: 'Type 2 inflammation in dermatology Summit',
             img: '../assets/sanofi/5.jpg',
           },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/6.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/7.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/8.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/9.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/10.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/11.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/12.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/13.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/14.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/15.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/16.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/17.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/18.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/19.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/20.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/21.jpg',
-          },
-          {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/22.jpg',
-          },
         ],
+        type: FILTER_ACTIONS.html,
+        link: '',
       },
       {
         cover: '../assets/gsk/3.jpeg',
@@ -226,82 +161,9 @@ export const user: User = {
             description: 'Cycle Meeting',
             img: '../assets/gsk/3.jpeg',
           },
-          {
-            description: 'Cycle Meeting',
-            img: '../assets/gsk/4.jpeg',
-          },
-          {
-            description: 'Cycle Meeting',
-            img: '../assets/gsk/5.jpeg',
-          },
-          {
-            description: 'Cycle Meeting',
-            img: '../assets/gsk/6.jpeg',
-          },
         ],
-      },
-      {
-        cover: '../assets/astraZeneca/1.jpg',
-        name: 'AstraZeneca ',
-        content: [
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/1.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/2.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/3.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/4.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/5.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/6.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/7.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/8.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/9.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/10.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/11.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/12.jpg',
-          },
-
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/13.jpg',
-          },
-          {
-            description: 'Cardio-Renal Summit',
-            img: '../assets/astraZeneca/14.jpg',
-          },
-        ],
+        type: FILTER_ACTIONS.bootstrap,
+        link: '',
       },
       {
         cover: '../assets/pfizer/1.jpeg',
@@ -328,6 +190,8 @@ export const user: User = {
             img: '../assets/pfizer/5.jpeg',
           },
         ],
+        type: FILTER_ACTIONS.react,
+        link: '',
       },
     ],
   },

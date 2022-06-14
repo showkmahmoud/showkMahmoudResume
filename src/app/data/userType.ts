@@ -1,32 +1,34 @@
 import { IconNamesEnum } from 'ngx-bootstrap-icons';
 
-type SocialItem = {
+export type SocialItem = {
   iconName: IconNamesEnum | IconNamesEnum;
   link: string;
   iconSize: string;
 };
-type EducationStep = {
+export type EducationStep = {
   time: string;
   level: string;
   location: string;
   grade: string;
 };
-type ExperienceItem = {
+export type ExperienceItem = {
   position: string;
   location: string;
   time: string;
   content: string;
 };
-type PortfolioItemContent = {
+export type PortfolioItemContent = {
   description: string;
   img: string;
 };
-type PortfolioItem = {
+export type PortfolioItem = {
   cover: string;
   name: string;
   content: PortfolioItemContent[];
+  link: string;
+  type: string;
 };
-type SkillItem = {
+export type SkillItem = {
   label: string;
   percentage: number;
   value: string;

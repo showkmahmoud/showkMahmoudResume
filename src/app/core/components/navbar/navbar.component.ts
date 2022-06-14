@@ -9,10 +9,12 @@ import { User } from 'src/app/data/userType';
 })
 export class NavbarComponent implements OnInit {
   @Output() buttonClicked: EventEmitter<any> = new EventEmitter();
+  @Output() sideMenuOpened: EventEmitter<any> = new EventEmitter();
+
   user: User = user;
   items = navbarItems;
   menuOpen: boolean = true;
-
+  sideMenuOpen: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
@@ -22,5 +24,9 @@ export class NavbarComponent implements OnInit {
   onClick(item: any) {
     this.menuOpen = true;
     this.buttonClicked.emit(item);
+  }
+  onSideMenu(value: boolean) {
+    this.sideMenuOpen = value;
+    this.sideMenuOpened.emit(value);
   }
 }

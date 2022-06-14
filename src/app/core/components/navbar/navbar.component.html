@@ -1,9 +1,12 @@
 <nav class="navbar mobile-navbar">
   <ul>
     <i
-      (click)="onClick('home')"
-      class="fa fa-home fa-3x home-icon mobile-home-page"
-      routerLink="home"
+      (click)="onSideMenu(true)"
+      (tuiActiveZoneChange)="onSideMenu($event)"
+      class="fa fa-user fa-3x home-icon mobile-home-page"
+    >
+      <div *tuiSidebar="sideMenuOpen; direction: 'left'">
+        <app-side-menu></app-side-menu></div
     ></i>
     <li class="navbar-toggle">
       <button
@@ -23,6 +26,17 @@
         routerLink="home"
       ></i>
       <li
+        class="navbar-item link about-link"
+        [ngClass]="{
+          'navbar-hide': menuOpen
+        }"
+        (click)="onClick('home')"
+      >
+        <a routerLinkActive="active" class="link" routerLink="home" tuiLink>
+          <span class="tui-text_body-m item-name">About</span>
+        </a>
+      </li>
+      <li
         class="navbar-item link"
         *ngFor="let item of items"
         [ngClass]="{
@@ -40,6 +54,7 @@
         </a>
       </li>
     </ul>
+
     <li
       class="navbar-item link"
       [ngClass]="{
