@@ -3,6 +3,11 @@
     justify-content: space-between;
   }
 }
+.justify-center {
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+}
 .filter-section {
   display: flex;
   justify-content: space-between;
@@ -16,6 +21,10 @@
   p {
     white-space: nowrap;
   }
+}
+.card-header {
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 .active_filter_item {
   color: var(--tui-primary);
@@ -92,6 +101,7 @@ img {
 .carousel-wrapper {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   margin: 0 -5rem;
   :host-context(tui-root._mobile) & {
     margin: 0;
@@ -107,14 +117,15 @@ img {
   height: 25rem;
   flex: 1;
   background: var(--tui-base-01) center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .left-arrow {
-  margin-top: -40%;
+  margin-top: -20%;
 }
 .right-arrow {
-  margin-top: -40%;
+  margin-top: -20%;
 }
 .pagination-items {
   margin-top: 20px;

@@ -5,7 +5,7 @@ import { User } from './userType';
 export const user: User = {
   img: '../assets/user.jpeg',
   name: 'Showk Mahmoud',
-  birthday: '10th of July 1996',
+  birthday: '10/7/1996',
   position: 'Front-end developer',
   email: 'showkmahmoud@gmail.com',
   about: {
@@ -118,80 +118,92 @@ export const user: User = {
     name: 'Portfolio',
     items: [
       {
-        cover: '../assets/sanofi/2.jpg',
-        name: 'Sanofi',
+        cover: '../assets/colorLib/cover.png',
+        name: 'Colorlib Template',
         content: [
           {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/1.jpg',
+            description: 'full website page',
+            img: '../assets/colorLib/full-page.jpg',
           },
           {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/2.jpg',
+            description: '',
+            img: '../assets/colorLib/1.png',
           },
           {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/3.jpg',
+            description: '',
+            img: '../assets/colorLib/2.png',
           },
           {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/4.jpg',
+            description: '',
+            img: '../assets/colorLib/3.png',
           },
           {
-            description: 'Type 2 inflammation in dermatology Summit',
-            img: '../assets/sanofi/5.jpg',
+            description: '',
+            img: '../assets/colorLib/4.png',
+          },
+          {
+            description: '',
+            img: '../assets/colorLib/5.png',
           },
         ],
         type: FILTER_ACTIONS.html,
-        link: '',
+        link: 'https://showkmahmoud.github.io/colorlip_app/',
       },
       {
-        cover: '../assets/gsk/3.jpeg',
-        name: 'GSK',
+        cover: '../assets/mogoProject/cover.png',
+        name: 'Mogo project',
         content: [
           {
-            description: 'Cycle Meeting',
-            img: '../assets/gsk/1.jpeg',
+            description: '',
+            img: '../assets/mogoProject/full-page.png',
           },
           {
-            description: 'Cycle Meeting',
-            img: '../assets/gsk/2.jpeg',
+            description: '',
+            img: '../assets/mogoProject/1.png',
           },
           {
-            description: 'Cycle Meeting',
-            img: '../assets/gsk/3.jpeg',
+            description: '',
+            img: '../assets/mogoProject/2.png',
+          },
+          {
+            description: '',
+            img: '../assets/mogoProject/3.png',
+          },
+          {
+            description: '',
+            img: '../assets/mogoProject/4.png',
+          },
+          {
+            description: '',
+            img: '../assets/mogoProject/5.png',
           },
         ],
         type: FILTER_ACTIONS.bootstrap,
-        link: '',
+        link: 'https://showkmahmoud.github.io/Mogo_project/',
       },
       {
-        cover: '../assets/pfizer/1.jpeg',
-        name: 'Pfizer',
+        cover: '../assets/reactMoviesApp/cover.png',
+        name: 'MOVIES APP',
         content: [
           {
-            description: 'Post operative pain event',
-            img: '../assets/pfizer/1.jpeg',
+            description: 'TRENDING TODAY',
+            img: '../assets/reactMoviesApp/1.png',
           },
           {
-            description: 'Post operative pain event',
-            img: '../assets/pfizer/2.jpeg',
+            description: 'Search Page',
+            img: '../assets/reactMoviesApp/2.png',
           },
           {
-            description: 'Post operative pain event',
-            img: '../assets/pfizer/3.jpeg',
+            description: 'DISCOVER SERIES',
+            img: '../assets/reactMoviesApp/3.png',
           },
           {
-            description: 'Post operative pain event',
-            img: '../assets/pfizer/4.jpeg',
-          },
-          {
-            description: 'Post operative pain event',
-            img: '../assets/pfizer/5.jpeg',
+            description: 'Movies',
+            img: '../assets/reactMoviesApp/4.png',
           },
         ],
         type: FILTER_ACTIONS.react,
-        link: '',
+        link: 'https://movies-an-serieses-searching-app.netlify.app/',
       },
     ],
   },

@@ -25,15 +25,26 @@
         <div class="overlay"></div>
       </div>
       <div class="card-info" #carouselContainer>
-        <button
-          tuiIconButton
-          appearance="primary"
-          icon="tuiIconAttach"
-          shape="rounded"
-          size="m"
-          (click)="onClick(cardIndex)"
-        ></button>
-        <p class="tui-text_body-m">{{ item.name }}</p>
+        <div class="tui-row justify-center">
+          <button
+            tuiIconButton
+            appearance="primary"
+            icon="tuiIconEyeOpen"
+            shape="rounded"
+            size="m"
+            class="tui-space_right-3"
+            (click)="onClick(cardIndex)"
+          ></button>
+          <button
+            tuiIconButton
+            appearance="primary"
+            icon="tuiIconAttach"
+            shape="rounded"
+            size="m"
+            (click)="onRoute(item.link)"
+          ></button>
+        </div>
+        <p class="tui-text_body-m card-header">{{ item.name }}</p>
         <ng-template #header>
           <div
             class="carousel-header"
@@ -41,7 +52,7 @@
           ></div>
         </ng-template>
         <ng-template
-          [tuiDialogOptions]="{ size: 's', header: header }"
+          [tuiDialogOptions]="{ size: 'l', header: header }"
           [(tuiDialog)]="open"
         >
           <div
@@ -65,7 +76,7 @@
                   let i = index
                 "
               >
-                <p class="carousel-p" *tuiItem>
+                <p class="carousel-p card-header" *tuiItem>
                   {{ carouselItem.description }}
                 </p>
               </ng-container>

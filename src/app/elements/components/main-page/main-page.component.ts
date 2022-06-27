@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class MainPageComponent implements OnInit {
   menuOpen: boolean = false;
   rightMenuOpen: boolean = false;
-  mode: string = 'light';
+  mode: string = 'dark';
   settingWidth: boolean = false;
   colors: string[] = [
     '0, 80, 211,',
@@ -22,7 +22,7 @@ export class MainPageComponent implements OnInit {
   about: any;
   themes: string[] = ['light', 'dark'];
   selectedColor: any;
-  selectedTheme: any = 'light';
+  selectedTheme: any = 'dark';
   sideMenuOpen: any;
   constructor(private route: Router) {}
 

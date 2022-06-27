@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { user } from 'src/app/data/user';
-import {
-  PortfolioItem,
-  PortfolioItemContent,
-  User,
-} from 'src/app/data/userType';
+import { PortfolioItem, User } from 'src/app/data/userType';
 export enum FILTER_ACTIONS {
   all = 'All',
   html = 'HTML5 & CSS3',
@@ -76,5 +72,8 @@ export class PortfolioComponent implements OnInit {
   }
   navigate(delta: number, length: number): void {
     this.index = (this.index + delta) % length;
+  }
+  onRoute(link: string) {
+    window.open(link, '_blank');
   }
 }
