@@ -11,7 +11,7 @@ export const user: User = {
   about: {
     name: 'About Me',
     content:
-      'Front-end developer graduated from Information Technology Institute with knowledge in front-end technologies, passionate about clean code and getting things done, I hope to build the success of the company while I improving my experience.',
+      'Front-end developer graduated from Information Technology Institute with knowledge in front-end technologies, passionate about clean code and getting things done, I hope to build the success of the company while improving my experience.',
     achievement: [],
   },
   resume: '../assets/user.jpeg',
