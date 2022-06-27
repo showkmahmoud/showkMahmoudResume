@@ -205,6 +205,34 @@ export const user: User = {
         type: FILTER_ACTIONS.react,
         link: 'https://movies-an-serieses-searching-app.netlify.app/',
       },
+      {
+        cover: '../assets/angularPortfolio/cover.png',
+        name: 'angular portfolio website',
+        content: [
+          {
+            description: 'home page',
+            img: '../assets/angularPortfolio/1.png',
+          },
+          {
+            description: 'home page in the dark mode',
+            img: '../assets/angularPortfolio/2.png',
+          },
+          {
+            description: 'testimonials page',
+            img: '../assets/angularPortfolio/3.png',
+          },
+          {
+            description: 'home page in mobile view',
+            img: '../assets/angularPortfolio/4.png',
+          },
+          {
+            description: 'testimonials page in mobile view',
+            img: '../assets/angularPortfolio/5.png',
+          },
+        ],
+        type: FILTER_ACTIONS.angular,
+        link: 'https://alaamuhammed.netlify.app',
+      },
     ],
   },
 };
