@@ -56,6 +56,11 @@ export const user: User = {
         value: '90',
       },
       {
+        label: 'OOP',
+        percentage: 60,
+        value: '60',
+      },
+      {
         label: 'JAVASCRIPT',
         percentage: 75,
         value: '75',
@@ -79,11 +84,6 @@ export const user: User = {
         label: 'Git and GitHub',
         percentage: 65,
         value: '65',
-      },
-      {
-        label: 'OOP',
-        percentage: 60,
-        value: '60',
       },
     ],
   },
@@ -112,7 +112,10 @@ export const user: User = {
         position: 'Front-End Developer (Angular) at Plark Project',
         location: 'Alexandria, Egypt',
         time: 'September 2021 – now',
-        content: '',
+        content: `the project serves
+        the admin who can build his website from our website based on some options in the configuration part to choose the page layout and the sections
+        with a dashboard
+        to the admin`,
       },
     ],
   },
