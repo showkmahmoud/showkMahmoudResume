@@ -56,6 +56,11 @@ export const user: User = {
         value: '90',
       },
       {
+        label: 'ANGULAR',
+        percentage: 80,
+        value: '80',
+      },
+      {
         label: 'OOP',
         percentage: 60,
         value: '60',
@@ -65,11 +70,7 @@ export const user: User = {
         percentage: 75,
         value: '75',
       },
-      {
-        label: 'ANGULAR',
-        percentage: 80,
-        value: '80',
-      },
+
       {
         label: 'React.js',
         percentage: 65,
@@ -130,6 +131,34 @@ export const user: User = {
   portfolio: {
     name: 'Portfolio',
     items: [
+      {
+        cover: '../assets/angularPortfolio/cover.png',
+        name: 'angular portfolio website',
+        content: [
+          {
+            description: 'home page',
+            img: '../assets/angularPortfolio/1.png',
+          },
+          {
+            description: 'home page in the dark mode',
+            img: '../assets/angularPortfolio/2.png',
+          },
+          {
+            description: 'testimonials page',
+            img: '../assets/angularPortfolio/3.png',
+          },
+          {
+            description: 'home page in mobile view',
+            img: '../assets/angularPortfolio/4.png',
+          },
+          {
+            description: 'testimonials page in mobile view',
+            img: '../assets/angularPortfolio/5.png',
+          },
+        ],
+        type: FILTER_ACTIONS.angular,
+        link: 'https://alaamuhammed.netlify.app',
+      },
       {
         cover: '../assets/colorLib/cover.png',
         name: 'Colorlib Template',
@@ -218,34 +247,7 @@ export const user: User = {
         type: FILTER_ACTIONS.react,
         link: 'https://movies-an-serieses-searching-app.netlify.app/',
       },
-      {
-        cover: '../assets/angularPortfolio/cover.png',
-        name: 'angular portfolio website',
-        content: [
-          {
-            description: 'home page',
-            img: '../assets/angularPortfolio/1.png',
-          },
-          {
-            description: 'home page in the dark mode',
-            img: '../assets/angularPortfolio/2.png',
-          },
-          {
-            description: 'testimonials page',
-            img: '../assets/angularPortfolio/3.png',
-          },
-          {
-            description: 'home page in mobile view',
-            img: '../assets/angularPortfolio/4.png',
-          },
-          {
-            description: 'testimonials page in mobile view',
-            img: '../assets/angularPortfolio/5.png',
-          },
-        ],
-        type: FILTER_ACTIONS.angular,
-        link: 'https://alaamuhammed.netlify.app',
-      },
+
       {
         cover: '../assets/horicaStar/cover.png',
         name: 'horeca star template',
@@ -282,12 +284,14 @@ export const user: User = {
   },
 };
 export const navbarItems = [
-  { link: 'skills', name: 'Skills' },
-  { link: 'education', name: 'Education' },
   {
     link: 'resume',
-    name: 'Resume',
+    name: 'Experience',
   },
+  { link: 'education', name: 'Education' },
+
+  { link: 'skills', name: 'Skills' },
+
   {
     link: 'portfolio',
     name: 'Portfolio',
