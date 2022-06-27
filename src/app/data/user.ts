@@ -233,6 +233,38 @@ export const user: User = {
         type: FILTER_ACTIONS.angular,
         link: 'https://alaamuhammed.netlify.app',
       },
+      {
+        cover: '../assets/horicaStar/cover.png',
+        name: 'horeca star template',
+        content: [
+          {
+            description: 'HTML Static template',
+            img: '../assets/horicaStar/full-page.png',
+          },
+          {
+            description: '',
+            img: '../assets/horicaStar/cover.png',
+          },
+          {
+            description: '',
+            img: '../assets/horicaStar/1.png',
+          },
+          {
+            description: '',
+            img: '../assets/horicaStar/2.png',
+          },
+          {
+            description: '',
+            img: '../assets/horicaStar/3.png',
+          },
+          {
+            description: '',
+            img: '../assets/horicaStar/4.png',
+          },
+        ],
+        type: FILTER_ACTIONS.html,
+        link: 'https://showkmahmoud.github.io/HoricaStar/',
+      },
     ],
   },
 };
@@ -243,7 +275,6 @@ export const navbarItems = [
     link: 'resume',
     name: 'Resume',
   },
-  // { link: 'testimonials', name: 'Testimonials' },
   {
     link: 'portfolio',
     name: 'Portfolio',

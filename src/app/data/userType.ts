@@ -25,7 +25,7 @@ export type PortfolioItem = {
   cover: string;
   name: string;
   content: PortfolioItemContent[];
-  link: string;
+  link: string | null;
   type: string;
 };
 export type SkillItem = {

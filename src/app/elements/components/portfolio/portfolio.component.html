@@ -42,6 +42,7 @@
             shape="rounded"
             size="m"
             (click)="onRoute(item.link)"
+            *ngIf="item.link !== null"
           ></button>
         </div>
         <p class="tui-text_body-m card-header">{{ item.name }}</p>

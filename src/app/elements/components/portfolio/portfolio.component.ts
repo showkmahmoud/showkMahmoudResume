@@ -20,7 +20,7 @@ export class PortfolioComponent implements OnInit {
     FILTER_ACTIONS.all,
     FILTER_ACTIONS.html,
     FILTER_ACTIONS.bootstrap,
-    FILTER_ACTIONS.js,
+    // FILTER_ACTIONS.js,
     FILTER_ACTIONS.react,
     FILTER_ACTIONS.angular,
   ];
