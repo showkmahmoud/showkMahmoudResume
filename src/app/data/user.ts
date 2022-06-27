@@ -51,6 +51,11 @@ export const user: User = {
         value: '90',
       },
       {
+        label: 'Bootstrap and responsive web applications - Media Queries',
+        percentage: 90,
+        value: '90',
+      },
+      {
         label: 'JAVASCRIPT',
         percentage: 75,
         value: '75',
@@ -66,14 +71,19 @@ export const user: User = {
         value: '65',
       },
       {
-        label: 'Team worker',
-        percentage: 90,
-        value: '90',
+        label: 'JQuery',
+        percentage: 60,
+        value: '60',
       },
       {
-        label: 'leadership skills',
-        percentage: 85,
-        value: '85',
+        label: 'Git and GitHub',
+        percentage: 65,
+        value: '65',
+      },
+      {
+        label: 'OOP',
+        percentage: 60,
+        value: '60',
       },
     ],
   },
