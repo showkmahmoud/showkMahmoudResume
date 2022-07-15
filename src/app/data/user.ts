@@ -280,6 +280,42 @@ export const user: User = {
         type: FILTER_ACTIONS.html,
         link: 'https://showkmahmoud.github.io/HoricaStar/',
       },
+      {
+        cover: '../assets/resume-philip/cover.png',
+        name: 'template for Philip resume',
+        content: [
+          {
+            description: 'HTML template for Philip resume',
+            img: '../assets/resume-philip/cover.png',
+          },
+          {
+            description: 'HTML template for Philip resume',
+            img: '../assets/resume-philip/1.png',
+          },
+          {
+            description: '',
+            img: '../assets/resume-philip/2.png',
+          },
+          {
+            description: '',
+            img: '../assets/resume-philip/3.png',
+          },
+          {
+            description: '',
+            img: '../assets/resume-philip/4.png',
+          },
+          {
+            description: '',
+            img: '../assets/resume-philip/5.png',
+          },
+          {
+            description: '',
+            img: '../assets/resume-philip/6.png',
+          },
+        ],
+        type: FILTER_ACTIONS.html,
+        link: 'https://showkmahmoud.github.io/resume-PHILIP-GILBERT/',
+      },
     ],
   },
 };
