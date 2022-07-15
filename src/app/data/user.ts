@@ -314,8 +314,9 @@ export const user: User = {
           },
         ],
         type: FILTER_ACTIONS.html,
-        link: 'https://showkmahmoud.github.io/resume-PHILIP-GILBERT/',
+        link: '',
       },
+      // https://showkmahmoud.github.io/resume-PHILIP-GILBERT/
     ],
   },
 };
