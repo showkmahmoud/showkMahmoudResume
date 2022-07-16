@@ -65,15 +65,13 @@
               tuiIconButton
               icon="tuiIconChevronLeftLarge"
               class="left-arrow"
-              (click)="
-                navigate(-1, user.portfolio.items[itemIndex].content.length)
-              "
+              (click)="navigate(-1, filteredItems[itemIndex].content.length)"
               [disabled]="index === 0"
             ></button>
             <tui-carousel [(index)]="index" [draggable]="true">
               <ng-container
                 *ngFor="
-                  let carouselItem of user.portfolio.items[itemIndex].content;
+                  let carouselItem of filteredItems[itemIndex].content;
                   let i = index
                 "
               >
@@ -87,15 +85,13 @@
               tuiIconButton
               icon="tuiIconChevronRightLarge"
               class="right-arrow"
-              (click)="
-                navigate(1, user.portfolio.items[itemIndex].content.length)
-              "
+              (click)="navigate(1, filteredItems[itemIndex].content.length)"
             ></button>
           </div>
           <tui-pagination
             size="s"
             class="pagination-items"
-            [length]="user.portfolio.items[itemIndex].content.length"
+            [length]="filteredItems[itemIndex].content.length"
             [(index)]="index"
           ></tui-pagination>
         </ng-template>
