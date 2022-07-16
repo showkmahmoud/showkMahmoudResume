@@ -66,9 +66,7 @@ export class PortfolioComponent implements OnInit {
     }
   }
   get background(): any {
-    return `url(${
-      this.user.portfolio.items[this.itemIndex].content[this.index].img
-    })`;
+    return `url(${this.filteredItems[this.itemIndex].content[this.index].img})`;
   }
   navigate(delta: number, length: number): void {
     this.index = (this.index + delta) % length;
