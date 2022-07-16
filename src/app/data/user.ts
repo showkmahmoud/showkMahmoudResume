@@ -286,6 +286,10 @@ export const user: User = {
         content: [
           {
             description: 'HTML template for Philip resume',
+            img: '../assets/resume-philip/7.png',
+          },
+          {
+            description: 'HTML template for Philip resume',
             img: '../assets/resume-philip/cover.png',
           },
           {
@@ -315,6 +319,102 @@ export const user: User = {
         ],
         type: FILTER_ACTIONS.html,
         link: 'https://showkmahmoud.github.io/resume-PHILIP-GILBERT/',
+      },
+      {
+        cover: '../assets/Trafalgar/cover.png',
+        name: 'static template for Trafalgar',
+        content: [
+          {
+            description: 'static template for Trafalgar',
+            img: '../assets/Trafalgar/7.png',
+          },
+          {
+            description: '',
+            img: '../assets/Trafalgar/cover.png',
+          },
+          {
+            description: '',
+            img: '../assets/Trafalgar/1.png',
+          },
+          {
+            description: '',
+            img: '../assets/Trafalgar/2.png',
+          },
+          {
+            description: '',
+            img: '../assets/Trafalgar/3.png',
+          },
+          {
+            description: '',
+            img: '../assets/Trafalgar/4.png',
+          },
+          {
+            description: '',
+            img: '../assets/Trafalgar/5.png',
+          },
+          {
+            description: '',
+            img: '../assets/Trafalgar/6.png',
+          },
+        ],
+        type: FILTER_ACTIONS.html,
+        link: 'https://showkmahmoud.github.io/Trafalgar-Templatr/',
+      },
+      {
+        cover: '../assets/balsam-pharmacy/cover0.png',
+        name: 'balsam pharmay website',
+        content: [
+          {
+            description: 'graduation project of ITI',
+            img: '../assets/balsam-pharmacy/cover0.png',
+          },
+          {
+            description: 'home page of the website',
+            img: '../assets/balsam-pharmacy/1.png',
+          },
+          {
+            description: 'login-page with sign in with google',
+            img: '../assets/balsam-pharmacy/login.png',
+          },
+          {
+            description: 'registeration page',
+            img: '../assets/balsam-pharmacy/2.png',
+          },
+          {
+            description: 'about-us page',
+            img: '../assets/balsam-pharmacy/3.png',
+          },
+          {
+            description: 'dashboard to the admin to add items',
+            img: '../assets/balsam-pharmacy/4.png',
+          },
+          {
+            description: '',
+            img: '../assets/balsam-pharmacy/5.png',
+          },
+          {
+            description: 'the drop-down shows the admin options',
+            img: '../assets/balsam-pharmacy/6.png',
+          },
+          {
+            description: '',
+            img: '../assets/balsam-pharmacy/7.png',
+          },
+          {
+            description: '',
+            img: '../assets/balsam-pharmacy/8.png',
+          },
+          {
+            description: '',
+            img: '../assets/balsam-pharmacy/9.png',
+          },
+          {
+            description: 'the website in mobile-view',
+            img: '../assets/balsam-pharmacy/mobile.png',
+          },
+        ],
+        type: FILTER_ACTIONS.react,
+        link: 'https://github.com/showkmahmoud/Balasam_Pharmacy.git',
       },
     ],
   },
