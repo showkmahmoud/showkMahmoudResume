@@ -1,3 +1,9 @@
+/**
+ * Author: Showk Mahmoud
+ *
+ * Provides the main layout and the content of the portfolio
+ *
+ */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,7 +14,6 @@ import { Router } from '@angular/router';
 })
 export class MainPageComponent implements OnInit {
   menuOpen: boolean = false;
-  rightMenuOpen: boolean = false;
   mode: string = 'light';
   settingWidth: boolean = false;
   colors: string[] = [
@@ -19,7 +24,6 @@ export class MainPageComponent implements OnInit {
     '2, 154, 131,',
     '246, 36, 89,',
   ];
-  about: any;
   themes: string[] = ['light', 'dark'];
   selectedColor: any;
   selectedTheme: any = 'light';
@@ -27,25 +31,21 @@ export class MainPageComponent implements OnInit {
   constructor(private route: Router) {}
 
   ngOnInit(): void {
+    // initial values of the default color
     this.updateStyles('0, 180, 217,');
     const url = this.route.url.split('/')[2];
-    this.getUrl(url);
+    // this.getUrl(url);
   }
+
   toggleMenu(menuOpen: boolean) {
     this.menuOpen = menuOpen;
   }
-  toggleRightMenu(rightMenuOpen: boolean) {
-    this.rightMenuOpen = rightMenuOpen;
-  }
+  // toggle the mode Setting menu
   onOpenStyleSettings() {
     this.settingWidth = !this.settingWidth;
   }
-  onClose() {
-    this.menuOpen = false;
-  }
-  onCloseRightMenu() {
-    this.rightMenuOpen = false;
-  }
+
+  // to update the style color of the page
   updateStyles(item: string) {
     // If empty assign default.
     document.documentElement.style.setProperty(
@@ -67,16 +67,15 @@ export class MainPageComponent implements OnInit {
     this.selectedColor = item;
     this.settingWidth = false;
   }
+
+  // to select theme
   onChangeTheme(theme: string) {
     this.mode = theme;
     this.selectedTheme = theme;
     this.settingWidth = false;
   }
-  getUrl(item: any) {
-    this.about = item;
-  }
-  openSideMenu(value: any) {
+
+  toggleSideMenu(value: any) {
     this.sideMenuOpen = value;
-    console.log(value);
   }
 }

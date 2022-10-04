@@ -39,7 +39,6 @@ export type User = {
   birthday: string;
   position: string;
   email: string;
-  // military_service: string;
   about: {
     name: string;
     content: string;

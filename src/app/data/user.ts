@@ -2,6 +2,7 @@ import { IconNamesEnum } from 'ngx-bootstrap-icons';
 import { FILTER_ACTIONS } from '../elements/components/portfolio/portfolio.component';
 import { User } from './userType';
 
+// portfolio data pages
 export const user: User = {
   img: '../assets/user.jpeg',
   name: 'Showk Mahmoud',
@@ -419,6 +420,7 @@ export const user: User = {
     ],
   },
 };
+// navabr items
 export const navbarItems = [
   {
     link: 'resume',

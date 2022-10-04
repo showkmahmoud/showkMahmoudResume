@@ -1,6 +1,9 @@
+<!-- Applicated if the dark mode is active => mode = 'dark' -->
 <tui-theme-night *ngIf="mode === 'dark'"></tui-theme-night>
+<!-- mode Setting -->
 <div class="theme-settings" [ngClass]="{ open: settingWidth }">
   <div class="color-settings">
+    <!-- theme options -->
     <div class="theme-option">
       <ng-container *ngFor="let item of themes">
         <p
@@ -12,6 +15,8 @@
         </p>
       </ng-container>
     </div>
+
+    <!-- color options -->
     <div class="color-options">
       <ng-container *ngFor="let item of colors">
         <div
@@ -27,6 +32,7 @@
       </ng-container>
     </div>
   </div>
+  <!-- toggle theme setting -->
   <div class="btn-setting">
     <button
       tuiButton
@@ -38,26 +44,24 @@
     ></button>
   </div>
 </div>
-
+<!-- main navbar in mobile view -->
 <nav class="mobile-nav">
-  <app-navbar
-    (buttonClicked)="getUrl($event)"
-    (sideMenuOpened)="openSideMenu($event)"
-  ></app-navbar>
+  <app-navbar (sideMenuOpened)="toggleSideMenu($event)"></app-navbar>
 </nav>
-
+<!-- page content -->
 <div class="container">
   <div class="tui-row tui-row_adaptive landing-layout-wrapper">
+    <!-- the side-bar in desktop view (left-side) -->
     <div class="tui-col_xs-12 tui-col_md-3 tui-col_lg-4 main-navigation">
       <app-side-menu></app-side-menu>
     </div>
+
+    <!-- the navbar and content-page (right-side) -->
     <div class="tui-col_xs-12 tui-col_md-12 tui-col_lg-8 landing-layout">
       <div class="navbar">
-        <app-navbar
-          (buttonClicked)="getUrl($event)"
-          (sideMenuOpened)="openSideMenu($event)"
-        ></app-navbar>
+        <app-navbar (sideMenuOpened)="toggleSideMenu($event)"></app-navbar>
       </div>
+      <!-- the content depending on the route -->
       <div class="elements margin_top">
         <router-outlet></router-outlet>
       </div>

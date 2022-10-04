@@ -1,6 +1,13 @@
+/**
+ * Author: Showk Mahmoud
+ *
+ * Provides the portfolio-page that contains more then one example
+ *
+ */
 import { Component, OnInit } from '@angular/core';
 import { user } from 'src/app/data/user';
 import { PortfolioItem, User } from 'src/app/data/userType';
+// filter label items
 export enum FILTER_ACTIONS {
   all = 'All',
   html = 'HTML5 & CSS3',
@@ -16,29 +23,34 @@ export enum FILTER_ACTIONS {
 })
 export class PortfolioComponent implements OnInit {
   user: User = user;
-  filterItems: string[] = [
+  filterItems: FILTER_ACTIONS[] = [
     FILTER_ACTIONS.all,
     FILTER_ACTIONS.html,
     FILTER_ACTIONS.bootstrap,
-    // FILTER_ACTIONS.js,
     FILTER_ACTIONS.react,
     FILTER_ACTIONS.angular,
   ];
   filteredItems!: PortfolioItem[];
   filterItem!: string;
+  open: boolean = false;
+  itemIndex: number = 0;
+  index: number = 0;
+
   constructor() {}
 
   ngOnInit(): void {
     this.filter(FILTER_ACTIONS.all);
   }
-  open = false;
-  itemIndex = 0;
-  index = 0;
-  onClick(i: number): void {
+
+  //  to open the Slider and display the images
+  onViewSlider(i: number): void {
     this.index = 0;
     this.itemIndex = i;
     this.open = true;
   }
+
+  // to filter the arry of cards depending on the technology that used in
+
   filter(action: string) {
     this.filterItem = action;
     if (action === FILTER_ACTIONS.all) {
@@ -68,9 +80,13 @@ export class PortfolioComponent implements OnInit {
   get background(): any {
     return `url(${this.filteredItems[this.itemIndex].content[this.index].img})`;
   }
+
+  // using to navigate between the images of the slider when you display it
   navigate(delta: number, length: number): void {
     this.index = (this.index + delta) % length;
   }
+
+  // to display the real modal from the card images that you watch
   onRoute(link: string) {
     window.open(link, '_blank');
   }
