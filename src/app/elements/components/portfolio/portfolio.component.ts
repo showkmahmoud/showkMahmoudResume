@@ -77,6 +77,8 @@ export class PortfolioComponent implements OnInit {
       );
     }
   }
+
+  // used to display the data as background image in the slider modal
   get background(): any {
     return `url(${this.filteredItems[this.itemIndex].content[this.index].img})`;
   }
