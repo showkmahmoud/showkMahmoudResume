@@ -111,9 +111,15 @@ export const user: User = {
     name: 'Working History',
     content: [
       {
+        position: 'CRM Front-End Developer (Angular) at 3D Diagnostix',
+        location: 'Cairo, Egypt',
+        time: 'November 2022 – now',
+        content: ``,
+      },
+      {
         position: 'Front-End Developer (Angular) at Plark Project',
         location: 'Alexandria, Egypt',
-        time: 'September 2021 – now',
+        time: 'September 2021 – November 2022',
         content: `the project serves
         the admin who can build his website from our website based on some options in the configuration part to choose the page layout and the sections
         with a dashboard
@@ -132,6 +138,34 @@ export const user: User = {
   portfolio: {
     name: 'Portfolio',
     items: [
+      {
+        cover: '../assets/exceed-web/exceed-cover.png',
+        name: 'Exceed website',
+        content: [
+          {
+            description: 'home page',
+            img: '../assets/exceed-web/1.png',
+          },
+          {
+            description: 'About us page',
+            img: '../assets/exceed-web/2.png',
+          },
+          {
+            description: 'Services page',
+            img: '../assets/exceed-web/3.png',
+          },
+          {
+            description: 'Products page',
+            img: '../assets/exceed-web/4.png',
+          },
+          {
+            description: 'Contact-us page',
+            img: '../assets/exceed-web/5.png',
+          },
+        ],
+        type: FILTER_ACTIONS.angular,
+        link: 'https://atheebsoft.com/home',
+      },
       {
         cover: '../assets/angularPortfolio/cover.png',
         name: 'angular portfolio website',
