@@ -477,7 +477,7 @@ export const user: User = {
           },
         ],
         type: FILTER_ACTIONS.angular,
-        link: 'https://k-shop-web.netlify.app/k-shop/home',
+        link: 'https://k-shop-web.netlify.app/',
       },
     ],
   },
