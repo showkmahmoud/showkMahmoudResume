@@ -167,6 +167,34 @@ export const user: User = {
         link: 'https://atheebsoft.com/home',
       },
       {
+        cover: '../assets/k-shop/cover.png',
+        name: 'K-shop Website',
+        content: [
+          {
+            description: 'small E-commerce project',
+            img: '../assets/k-shop/cover.png',
+          },
+          {
+            description: 'home page of the website',
+            img: '../assets/k-shop/1.png',
+          },
+          {
+            description: 'Whish List Page',
+            img: '../assets/k-shop/2.png',
+          },
+          {
+            description: 'Categories Page',
+            img: '../assets/k-shop/3.png',
+          },
+          {
+            description: 'Cart Page',
+            img: '../assets/k-shop/4.png',
+          },
+        ],
+        type: FILTER_ACTIONS.angular,
+        link: 'https://k-shop-web.netlify.app/',
+      },
+      {
         cover: '../assets/angularPortfolio/cover.png',
         name: 'angular portfolio website',
         content: [
@@ -451,34 +479,7 @@ export const user: User = {
         type: FILTER_ACTIONS.react,
         link: 'https://github.com/showkmahmoud/Balasam_Pharmacy.git',
       },
-      {
-        cover: '../assets/k-shop/cover.png',
-        name: 'K-shop Website',
-        content: [
-          {
-            description: 'small E-commerce project',
-            img: '../assets/k-shop/cover.png',
-          },
-          {
-            description: 'home page of the website',
-            img: '../assets/k-shop/1.png',
-          },
-          {
-            description: 'Whish List Page',
-            img: '../assets/k-shop/2.png',
-          },
-          {
-            description: 'Categories Page',
-            img: '../assets/k-shop/3.png',
-          },
-          {
-            description: 'Cart Page',
-            img: '../assets/k-shop/4.png',
-          },
-        ],
-        type: FILTER_ACTIONS.angular,
-        link: 'https://k-shop-web.netlify.app/',
-      },
+
     ],
   },
 };
