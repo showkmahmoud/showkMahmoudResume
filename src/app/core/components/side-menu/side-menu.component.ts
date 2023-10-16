@@ -19,7 +19,7 @@ export class SideMenuComponent implements OnInit {
     link.setAttribute('target', '_blank');
     link.setAttribute(
       'href',
-      'https://drive.google.com/file/d/15_zCV2pwUy6l05aRWzFnpcuw4IVxOrNt/view?usp=sharing'
+      'https://drive.google.com/file/d/1Tg7sYd42Bcoh8t0jcb2BVxL8ro1OJAma/view?usp=sharing'
     );
     link.setAttribute('download', `CV.pdf`);
     document.body.appendChild(link);

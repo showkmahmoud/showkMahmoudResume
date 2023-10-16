@@ -12,7 +12,7 @@ export const user: User = {
   about: {
     name: 'About Me',
     content:
-      'Front-end developer graduated from Information Technology Institute with knowledge in front-end technologies, passionate about clean code and getting things done, I hope to build the success of the company while improving my experience.',
+    'A conscientious front-end developer with more than 2 years of experience, passionate about building web applications, developing user interfaces, clean code, and getting things done. graduated from the Information Technology Institute (ITI) with knowledge in front-end technologies such as HTML, CSS, JavaScript, Angular, React, etc. I can work in a team and always support whoever is in need, I hope to build the success of the company while improving my experience.',
     achievement: [],
   },
   resume: '../assets/user.jpeg',
@@ -111,7 +111,7 @@ export const user: User = {
     name: 'Working History',
     content: [
       {
-        position: 'CRM Front-End Developer (Angular) at 3D Diagnostix',
+        position: 'Front-End Developer (Angular) at 3D Diagnostix',
         location: 'Cairo, Egypt',
         time: 'November 2022 – now',
         content: ``,
@@ -450,6 +450,34 @@ export const user: User = {
         ],
         type: FILTER_ACTIONS.react,
         link: 'https://github.com/showkmahmoud/Balasam_Pharmacy.git',
+      },
+      {
+        cover: '../assets/k-shop/cover.png',
+        name: 'K-shop Website',
+        content: [
+          {
+            description: 'small E-commerce project',
+            img: '../assets/k-shop/cover.png',
+          },
+          {
+            description: 'home page of the website',
+            img: '../assets/k-shop/1.png',
+          },
+          {
+            description: 'Whish List Page',
+            img: '../assets/k-shop/2.png',
+          },
+          {
+            description: 'Categories Page',
+            img: '../assets/k-shop/3.png',
+          },
+          {
+            description: 'Cart Page',
+            img: '../assets/k-shop/4.png',
+          },
+        ],
+        type: FILTER_ACTIONS.angular,
+        link: 'https://k-shop-web.netlify.app/k-shop/home',
       },
     ],
   },
