@@ -39,6 +39,7 @@ export type User = {
   birthday: string;
   position: string;
   email: string;
+  cvLink:string;
   about: {
     name: string;
     content: string;

@@ -9,10 +9,17 @@ export const user: User = {
   birthday: '10/7/1996',
   position: 'Front-end developer',
   email: 'showkmahmoud@gmail.com',
+  cvLink:'https://drive.google.com/file/d/1qNLf15RU8tiwiq1kmLUnO95qDSJnwQ9O/view?usp=sharing',
   about: {
     name: 'About Me',
     content:
-    'A conscientious front-end developer with more than 2 years of experience, passionate about building web applications, developing user interfaces, clean code, and getting things done. graduated from the Information Technology Institute (ITI) with knowledge in front-end technologies such as HTML, CSS, JavaScript, Angular, React, etc. I can work in a team and always support whoever is in need, I hope to build the success of the company while improving my experience.',
+    `A conscientious front-end developer with more than 3 years of experience
+    and I reside in the United Arab Emirates with family visa, working as a senior in my team for the last 7 months.
+    Now I can start immediately and I have not notice period.
+    passionate about building web applications, developing user interfaces, clean code, and getting things done.
+    graduated from the Information Technology Institute (ITI) with knowledge in front-end technologies such as HTML, CSS, JavaScript, Angular, React, etc.
+    I can work in a team and always support whoever is in need,
+    I hope to build the success of the company while improving my experience.` ,
     achievement: [],
   },
   resume: '../assets/user.jpeg',
@@ -130,8 +137,8 @@ export const user: User = {
   contact: {
     name: 'Contact Me',
     email: 'showkmahmoud@gmail.com',
-    address: 'Alexandria, Egypt',
-    mobileEgy: '+201279748207',
+    address: 'Dubai, UAE',
+    mobileEgy: '+971586471992',
     postion: 'Front-end developer',
     linkedIn: 'https://www.linkedin.com/in/showk-mahmoud-0b78b417b',
   },
