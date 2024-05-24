@@ -486,6 +486,30 @@ export const user: User = {
         type: FILTER_ACTIONS.react,
         link: 'https://github.com/showkmahmoud/Balasam_Pharmacy.git',
       },
+      {
+        cover: '../assets/zid-app/cover.png',
+        name: 'zid-app Template',
+        content: [
+          {
+            description: 'full website page',
+            img: '../assets/zid-app/2.png',
+          },
+          {
+            description: '',
+            img: '../assets/zid-app/cover.png',
+          },
+          {
+            description: '',
+            img: '../assets/zid-app/2.png',
+          },
+          {
+            description: 'mobile view',
+            img: '../assets/zid-app/3.png',
+          }
+        ],
+        type: FILTER_ACTIONS.html,
+        link: 'https://zid-app.netlify.app/home',
+      },
 
     ],
   },
