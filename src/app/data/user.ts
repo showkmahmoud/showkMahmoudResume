@@ -9,17 +9,17 @@ export const user: User = {
   birthday: '10/7/1996',
   position: 'Front-end developer',
   email: 'showkmahmoud@gmail.com',
-  cvLink:'https://drive.google.com/file/d/1qNLf15RU8tiwiq1kmLUnO95qDSJnwQ9O/view?usp=sharing',
+  cvLink:
+    'https://drive.google.com/file/d/1CJzTq1yf_ravuOHFhNBm7MP4QeIScXkJ/view?usp=sharing',
   about: {
     name: 'About Me',
-    content:
-    `A conscientious front-end developer with more than 3 years of experience
+    content: `A conscientious front-end developer with more than 3 years of experience
     and I reside in the United Arab Emirates with family visa, working as a senior in my team for the last 7 months.
     Now I can start immediately and I have not notice period.
     passionate about building web applications, developing user interfaces, clean code, and getting things done.
     graduated from the Information Technology Institute (ITI) with knowledge in front-end technologies such as HTML, CSS, JavaScript, Angular, React, etc.
     I can work in a team and always support whoever is in need,
-    I hope to build the success of the company while improving my experience.` ,
+    I hope to build the success of the company while improving my experience.`,
     achievement: [],
   },
   resume: '../assets/user.jpeg',
@@ -505,12 +505,11 @@ export const user: User = {
           {
             description: 'mobile view',
             img: '../assets/zid-app/3.png',
-          }
+          },
         ],
         type: FILTER_ACTIONS.html,
         link: 'https://zid-app.netlify.app/home',
       },
-
     ],
   },
 };
