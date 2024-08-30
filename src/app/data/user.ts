@@ -10,7 +10,7 @@ export const user: User = {
   position: 'Front-end developer',
   email: 'showkmahmoud@gmail.com',
   cvLink:
-    'https://drive.google.com/file/d/1CJzTq1yf_ravuOHFhNBm7MP4QeIScXkJ/view?usp=sharing',
+    'https://drive.google.com/file/d/1jArLhc0TqPsDfmM6DevIUbzlqzBxhNUf/view?usp=sharing',
   about: {
     name: 'About Me',
     content: `A conscientious front-end developer with more than 3 years of experience
