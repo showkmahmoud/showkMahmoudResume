@@ -4,7 +4,7 @@ import { User } from './userType';
 
 // portfolio data pages
 export const user: User = {
-  img: '../assets/user.jpeg',
+  img: '../assets/user.jpg',
   name: 'Showk Mahmoud',
   birthday: '10/7/1996',
   position: 'Front-end developer',
