@@ -13,13 +13,13 @@ export const user: User = {
     'https://drive.google.com/file/d/1jArLhc0TqPsDfmM6DevIUbzlqzBxhNUf/view?usp=sharing',
   about: {
     name: 'About Me',
-    content: `A conscientious front-end developer with more than 3 years of experience
-    and I reside in the United Arab Emirates with family visa, working as a senior in my team for the last 7 months.
-    Now I can start immediately and I have not notice period.
-    passionate about building web applications, developing user interfaces, clean code, and getting things done.
-    graduated from the Information Technology Institute (ITI) with knowledge in front-end technologies such as HTML, CSS, JavaScript, Angular, React, etc.
-    I can work in a team and always support whoever is in need,
-    I hope to build the success of the company while improving my experience.`,
+    content: `I am a dedicated and experienced Front-End Developer with over 3 years of industry experience, currently residing in the
+United Arab Emirates on a family visa. Over the past 7 months, I have been working as a Senior Front-End Developer,
+leading a team and contributing to impactful projects. I am available to start immediately and do not have a notice
+period. My expertise lies in building dynamic web applications and developing user interfaces with a focus on clean, maintainable code. I hold a degree from the Information Technology Institute (ITI) and have a strong background in front- end technologies including HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, Angular, and React. Additionally, I am
+proficient in designing user interfaces using Figma, which enhances my ability to create intuitive and visually appealing
+designs.I thrive in collaborative environments, offering support to team members and contributing to the overall success
+of the company while continuously enhancing my skills and staying up-to-date with the latest industry trends.`,
     achievement: [],
   },
   resume: '../assets/user.jpeg',
