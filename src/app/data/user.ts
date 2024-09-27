@@ -10,7 +10,7 @@ export const user: User = {
   position: 'Front-end developer',
   email: 'showkmahmoud@gmail.com',
   cvLink:
-    'https://drive.google.com/file/d/1jArLhc0TqPsDfmM6DevIUbzlqzBxhNUf/view?usp=sharing',
+    'https://drive.google.com/file/d/1AzwGKQ7vT3glraYTF_YBtp4cowTHfrFP/view?usp=sharing',
   about: {
     name: 'About Me',
     content: `I am a dedicated and experienced Front-End Developer with over 3 years of industry experience, currently residing in the
@@ -118,19 +118,82 @@ of the company while continuously enhancing my skills and staying up-to-date wit
     name: 'Working History',
     content: [
       {
+        position: 'Front-End Developer at Freelance (Various Projects)',
+        location: 'Dubai, UAE',
+        time: '',
+        content: `
+       Talabat Company:
+I led the development of a website from initial design to deployment. This project involved designing in Figma, coding
+with React, backend integration, and implementing animations with the GSAP library. -Technologies: HTML, HTML5, Tailwind, CSS3, Git with GitHub, Figma, React, GSAP, axios. - Designed a 3-page website in Figma, focusing on user experience and visual appeal starting from the wireframe to the
+design. - Converted Figma designs into a responsive and interactive website using React. - Created reusable React components to streamline development and ensure consistency across the site. - Ensured the website was responsive and tested across various devices and browsers for consistent performance. Happy Community: - Technologies: HTML, HTML5, CSS3, Git with GitHub, Figma, Bootstrap. - I transformed a design project from Figma into a fully functional and responsive website contain 12 pages in 3 days. - Collaborated with the design team to understand the visual and interactive elements of the Figma design. - Planned the structure and layout of the website, ensuring that the design's integrity was maintained during the
+conversion process. - Ensured that the HTML code was clean, maintainable, and followed best practices. - Applied custom CSS to style the website according to the design specifications. - Utilized Bootstrap to create a responsive and mobile-friendly layout, leveraging its grid system and pre-built
+components for efficiency. -Tested the website on various devices and browsers to ensure cross-browser compatibility and optimal performance.
+        `,
+      },
+      {
+        position: 'Front-End Developer at Freelance (Various Projects)',
+        location: 'Dubai, UAE',
+        time: '',
+        content: `
+       - Project Types: Security Web Page, Community Application (6 Pages), E-commerce App (7 Pages)
+        Technologies: HTML5, CSS3, Bootstrap, Tailwind CSS
+        Key Contributions: - Converted Figma designs into fully responsive and pixel-perfect HTML/CSS layouts using Bootstrap and Tailwind CSS. - Ensured cross-browser compatibility and optimized performance across different devices. - Developed and implemented responsive designs for complex layouts, adhering to best practices in web development. - Collaborated with clients to gather requirements and deliver tailored solutions that met their needs.
+        `,
+      },
+      {
+        position:
+          'Front-End Development Instructor at | Information Technology Institute (ITI)',
+        location: 'Alex, Egypt',
+        time: '',
+        content: `
+        -Developed structured lesson plans and course materials for Bootstrap, ES6, and responsive web design.
+        -Created real-world examples and coding exercises to reinforce learning objectives.
+        -Conducted interactive and engaging sessions on Bootstrap, demonstrating how to use its components and utilities to
+        build responsive websites.
+        - Taught modern JavaScript features and best practices, helping students write efficient and up-to-date code.
+        - Guided students through practical coding exercises and projects, providing hands-on experience with Bootstrap, ES6, and responsive design techniques.
+        `,
+      },
+      {
         position: 'Front-End Developer (Angular) at 3D Diagnostix',
         location: 'Cairo, Egypt',
-        time: 'November 2022 – now',
-        content: ``,
+        time: 'NOVEMBER 2022 – May 2024',
+        content: `
+        Working on more than one project such as:
+        * iSmile:
+        - Technologies: Angular, Angular Material, HTML5, CSS3, JS, Git with GitLab, unit test, ES6, Bootstrap.
+        - It is an E-commerce application.
+        - implementing easy-to-use and reusable components for managing configurations.
+        - building documentation for the UI components and making the integrations with back-end.
+        * Connect:
+        - Technologies: Angular, Angular Material, Prime NG, HTML5, CSS3, JS, Git, unit test, ES6, Bootstrap.
+        - It is an E-commerce application for Boston Dental doctors.        - Display popups depend on specific data from API.
+        - Do all client requirements.
+        - starting in a new integration with NetSuite back-end.
+        `,
+      },
+      {
+        position: 'Front-End Developer at Exceed-web',
+        location: 'Remote, Saudi Arabia',
+        time: '(July 2022 – October 2022)',
+        content: `
+        Technologies: Angular, Prime NG, HTML5, CSS, Sass, JS, Git with GitHub, ES6.
+        - Initializing the project from scratch through building the files structures, the integration with back-end, negotiation with
+        the designer and the whole setup
+        `,
       },
       {
         position: 'Front-End Developer (Angular) at Plark Project',
         location: 'Alexandria, Egypt',
         time: 'September 2021 – November 2022',
-        content: `the project serves
-        the admin who can build his website from our website based on some options in the configuration part to choose the page layout and the sections
-        with a dashboard
-        to the admin`,
+        content: `
+       - Technologies: React Js, Taiga UI, HTML5, CSS, Less, JS, Git with GitHub, ES6.
+       - the project helps the user who can want to build his website from our website based on some options in the
+        configuration part to choose the page layout and the sections with a dashboard to the admin.
+      - the integration with back-end library: SupaBase JavaScript Client Library.
+      - Initializing the project from scratch through building the files structures, modules, components, linting and the whole
+      setup.
+        `,
       },
     ],
   },
@@ -145,6 +208,47 @@ of the company while continuously enhancing my skills and staying up-to-date wit
   portfolio: {
     name: 'Portfolio',
     items: [
+      {
+        cover: '../assets/talabatWeb/cover.png',
+        name: 'Talabat website',
+        content: [
+          {
+            description: 'home page',
+            img: '../assets/talabatWeb/cover.png',
+          },
+          {
+            description: 'home page',
+            img: '../assets/talabatWeb/1.png',
+          },
+          {
+            description: 'Request page',
+            img: '../assets/talabatWeb/2.png',
+          },
+          {
+            description: 'Blogs page',
+            img: '../assets/talabatWeb/3.png',
+          },
+
+          {
+            description: 'Mobile View',
+            img: '../assets/talabatWeb/4.png',
+          },
+        ],
+        type: FILTER_ACTIONS.react,
+        link: 'https://talabat-web.onrender.com/',
+      },
+      {
+        cover: '../assets/talabatWeb/design1.png',
+        name: 'Talabat Figma Design',
+        content: [
+          {
+            description: 'figma design',
+            img: '../assets/talabatWeb/design1.png',
+          },
+        ],
+        type: FILTER_ACTIONS.Figma,
+        link: 'https://www.figma.com/design/J2sZnTVs5DUlLtDRWZjp8N/TALABAT-(Copy)?node-id=0-1&node-type=canvas&t=R8bKocdabFCeew2u-0',
+      },
       {
         cover: '../assets/exceed-web/exceed-cover.png',
         name: 'Exceed website',

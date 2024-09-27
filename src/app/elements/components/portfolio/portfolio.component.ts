@@ -15,6 +15,7 @@ export enum FILTER_ACTIONS {
   js = 'JavaScript',
   react = 'React Js',
   angular = 'Angular',
+  Figma = 'Figma Designs',
 }
 @Component({
   selector: 'app-portfolio',
@@ -29,6 +30,7 @@ export class PortfolioComponent implements OnInit {
     FILTER_ACTIONS.bootstrap,
     FILTER_ACTIONS.react,
     FILTER_ACTIONS.angular,
+    FILTER_ACTIONS.Figma,
   ];
   filteredItems!: PortfolioItem[];
   filterItem!: string;
@@ -74,6 +76,10 @@ export class PortfolioComponent implements OnInit {
     } else if (action === FILTER_ACTIONS.angular) {
       this.filteredItems = this.user.portfolio.items.filter(
         (item) => item.type === FILTER_ACTIONS.angular
+      );
+    } else if (action === FILTER_ACTIONS.Figma) {
+      this.filteredItems = this.user.portfolio.items.filter(
+        (item) => item.type === FILTER_ACTIONS.Figma
       );
     }
   }
