@@ -242,7 +242,7 @@ components for efficiency. -Tested the website on various devices and browsers t
         name: 'Talabat Figma Design',
         content: [
           {
-            description: 'figma design',
+            description: 'figma design includes 3 pages',
             img: '../assets/talabatWeb/design1.png',
           },
         ],
