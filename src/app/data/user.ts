@@ -4,22 +4,26 @@ import { User } from './userType';
 
 // portfolio data pages
 export const user: User = {
-  img: '../assets/user.png',
+  img: '../assets/user.jpeg',
   name: 'Showk Mahmoud',
   birthday: '10/7/1996',
   position: 'Front-end developer',
+  phone: '+971586471992',
   email: 'showkmahmoud@gmail.com',
   cvLink:
-    'https://drive.google.com/file/d/1AzwGKQ7vT3glraYTF_YBtp4cowTHfrFP/view?usp=sharing',
+    'https://drive.google.com/file/d/1LIACcbxlRkluCF05XeEO_qB9TZQ6tdIQ/view?usp=sharing',
   about: {
     name: 'About Me',
-    content: `I am a dedicated and experienced Front-End Developer with over 3 years of industry experience, currently residing in the
-United Arab Emirates on a family visa. Over the past 7 months, I have been working as a Senior Front-End Developer,
-leading a team and contributing to impactful projects. I am available to start immediately and do not have a notice
-period. My expertise lies in building dynamic web applications and developing user interfaces with a focus on clean, maintainable code. I hold a degree from the Information Technology Institute (ITI) and have a strong background in front- end technologies including HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, Angular, and React. Additionally, I am
-proficient in designing user interfaces using Figma, which enhances my ability to create intuitive and visually appealing
-designs.I thrive in collaborative environments, offering support to team members and contributing to the overall success
-of the company while continuously enhancing my skills and staying up-to-date with the latest industry trends.`,
+    content: `
+    I’m a passionate Front-End Developer with 4+ years of experience crafting modern, responsive, and user-friendly web applications using React.js, Angular, and TypeScript.
+My expertise covers UI/UX design in Figma, building pixel-perfect layouts with Tailwind CSS, Bootstrap, and SASS, and integrating REST APIs for seamless functionality.
+
+Currently based in Dubai, UAE, I’ve worked across diverse industries, delivering projects for companies in the MENA region as a Senior Front-End Developer, ITI Instructor, and Freelancer. I thrive in collaborative environments, lead teams effectively, and always stay up to date with the latest tech trends to create high-quality, scalable solutions.
+
+Core Skills & Tools:
+React.js | Angular | TypeScript | JavaScript | HTML5 | CSS3/SASS | Tailwind CSS | Bootstrap | REST API Integration | Git & GitHub | UI/UX Design with Figma | Responsive Web Apps | Team Leadership
+
+💡 Open to opportunities in front-end development and UI/UX-focused roles where I can combine technical expertise with creative design to deliver impactful results.`,
     achievement: [],
   },
   resume: '../assets/user.jpeg',
@@ -118,7 +122,23 @@ of the company while continuously enhancing my skills and staying up-to-date wit
     name: 'Working History',
     content: [
       {
-        position: 'Front-End Developer at Freelance (Various Projects)',
+        position: 'Front-End Developer at KG Technologies',
+        location: 'Dubai, UAE',
+        time: 'NOVEMBER 2024 – May 2025',
+        content: `
+        Developed ECO Print web application using React.js, Figma, Tailwind CSS, Material UI, CSS, JavaScript, and Git/GitHub.
+
+        Designed user interfaces in Figma and implemented pixel-perfect, fully responsive web pages.
+
+        Built the front end from scratch: set up project structure, created reusable components, and maintained best coding practices.
+
+        Collaborated closely with backend developers for seamless API integration and smooth functionality.
+
+        Continuously enhanced the application by adding features and improving UX based on user feedback.
+      `,
+      },
+      {
+        position: 'Freelancer Front-End Developer',
         location: 'Dubai, UAE',
         time: '',
         content: `
@@ -143,7 +163,7 @@ components for efficiency. -Tested the website on various devices and browsers t
       {
         position:
           'Front-End Development Instructor at | Information Technology Institute (ITI)',
-        location: 'Alex, Egypt',
+        location: 'Egypt',
         time: '',
         content: `
         -Developed structured lesson plans and course materials for Bootstrap, ES6, and responsive web design.

@@ -38,8 +38,9 @@ export type User = {
   name: string;
   birthday: string;
   position: string;
+  phone: string;
   email: string;
-  cvLink:string;
+  cvLink: string;
   about: {
     name: string;
     content: string;
