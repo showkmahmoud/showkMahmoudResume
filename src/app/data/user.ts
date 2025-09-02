@@ -11,7 +11,7 @@ export const user: User = {
   phone: '+971586471992',
   email: 'showkmahmoud@gmail.com',
   cvLink:
-    'https://drive.google.com/file/d/1LIACcbxlRkluCF05XeEO_qB9TZQ6tdIQ/view?usp=sharing',
+    'https://drive.google.com/file/d/1XHQ9v8fXbLMUUOcx_FJOpGlAUzfz-fCF/view?usp=sharing',
   about: {
     name: 'About Me',
     content: `
