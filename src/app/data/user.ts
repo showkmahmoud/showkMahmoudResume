@@ -11,7 +11,7 @@ export const user: User = {
   phone: '+971586471992',
   email: 'showkmahmoud@gmail.com',
   cvLink:
-    'https://drive.google.com/file/d/1XHQ9v8fXbLMUUOcx_FJOpGlAUzfz-fCF/view?usp=sharing',
+    'https://drive.google.com/file/d/17CQT20K4pcukKDIRwxxE1An7H_C3ht_X/view?usp=sharing',
   about: {
     name: 'About Me',
     content: `
@@ -63,6 +63,16 @@ React.js | Angular | TypeScript | JavaScript | HTML5 | CSS3/SASS | Tailwind CSS 
         value: '90',
       },
       {
+        label: 'Tailwind CSS',
+        percentage: 80,
+        value: '80',
+      },
+      {
+        label: 'Designing on figma with prototyping',
+        percentage: 80,
+        value: '80',
+      },
+      {
         label: 'Bootstrap and responsive web applications - Media Queries',
         percentage: 90,
         value: '90',
@@ -73,21 +83,26 @@ React.js | Angular | TypeScript | JavaScript | HTML5 | CSS3/SASS | Tailwind CSS 
         value: '80',
       },
       {
+        label: 'React.js',
+        percentage: 80,
+        value: '80',
+      },
+      {
         label: 'OOP',
-        percentage: 60,
-        value: '60',
+        percentage: 65,
+        value: '65',
       },
       {
         label: 'JAVASCRIPT',
         percentage: 75,
         value: '75',
       },
-
       {
-        label: 'React.js',
-        percentage: 65,
-        value: '65',
+        label: 'TypeScript',
+        percentage: 75,
+        value: '75',
       },
+
       {
         label: 'JQuery',
         percentage: 60,
@@ -95,8 +110,8 @@ React.js | Angular | TypeScript | JavaScript | HTML5 | CSS3/SASS | Tailwind CSS 
       },
       {
         label: 'Git and GitHub',
-        percentage: 65,
-        value: '65',
+        percentage: 80,
+        value: '80',
       },
     ],
   },
@@ -295,7 +310,7 @@ components for efficiency. -Tested the website on various devices and browsers t
           },
         ],
         type: FILTER_ACTIONS.angular,
-        link: 'https://atheebsoft.com/home',
+        link: 'https://exceed-web.netlify.app/',
       },
       {
         cover: '../assets/k-shop/cover.png',
